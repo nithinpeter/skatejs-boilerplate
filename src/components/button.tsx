@@ -1,7 +1,7 @@
 import 'skatejs-web-components';
 import { Component, h, prop, props } from 'skatejs';
 
-interface ButtonProps {
+export interface ButtonProps {
   label: string;
 }
 
@@ -22,4 +22,3 @@ export class Button extends Component<ButtonProps> {
 }
 
 customElements.define(Button.is, Button);
-console.log('hi')
