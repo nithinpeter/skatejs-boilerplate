@@ -17,6 +17,7 @@ module.exports = function (config) {
     files: [
       // './dist/bundle.js',
       '__tests__/**/*.test.ts',
+      '__tests__/utils/setup.ts',
     ],
 
     // list of files to exclude

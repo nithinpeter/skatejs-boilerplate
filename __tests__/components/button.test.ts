@@ -1,14 +1,14 @@
-import '../../src/components/button';
+import { Button } from '../../src/components/button';
+import { render, findOne } from '../utils/helpers';
 
-describe("Button tests", function() {
-  var a;
+describe("Button tests", function () {
 
-  it("renders button", function() {
+  it("renders button", function () {
     const label = 'click me';
-    const btn: any = document.createElement('s-button');
+    const btn: any = render(Button);
     btn.label = label;
-    document.body.appendChild(btn);
 
-    expect((document.querySelector('s-button') as any).label).toBe(label);
+    expect((findOne('s-button') as any).label).toBe(label);
   });
+
 });
